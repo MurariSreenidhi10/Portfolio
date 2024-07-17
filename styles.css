@@ -1,0 +1,163 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:rgb(195, 227, 249);
+}
+
+header {
+    background-color: #6e6d6d;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    
+}
+
+nav h1 {
+    color: white;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: large;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 2em;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-item {
+    background: #f4f4f4;
+    margin: 1em;
+    padding: 2em;
+    width: 200px;
+    text-align: center;
+}
+
+.skills .skills-content .column {
+  padding-left: 30%;
+}
+  
+  .skills .skills-content .column {
+    width: calc(75% - 30px);
+  }
+  
+  .skills .skills-content .right .bars {
+    margin-bottom: 15px;
+  }
+  
+  .skills .skills-content .right .info {
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .skills .skills-content .right span {
+    font-weight: 500;
+    font-size: 18px;
+  }
+  
+  .skills .skills-content .right .line {
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+  }
+  
+  .skills .skills-content .right .line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #364453;
+  }
+  
+  .skills-content .right .python::before {
+    width: 90%;
+  }
+  
+  .skills-content .right .html::before {
+    width: 80%;
+  }
+  
+  .skills-content .right .css::before {
+    width: 60%;
+  }
+  
+  .skills-content .right .js::before {
+    width: 40%;
+  }
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, form textarea {
+    width: 50%;
+    margin: 0.5em 0;
+    padding: 0.5em;
+}
+
+form button {
+    padding: 0.5em 2em;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    .gallery {
+        flex-direction: column;
+    }
+
+    .gallery-item {
+        width: 80%;
+    }
+}
